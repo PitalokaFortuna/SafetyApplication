@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fragment android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="center|bottom"
+        android:background="#80000000"
+        android:orientation="vertical"
+        tools:context=".MapsActivity" >
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Sensor Giroskop"
+            android:textSize="20sp"
+           />
+
+        <TextView
+            android:id="@+id/text_x_gyro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="text 1"
+            android:textSize="15sp"
+            android:layout_below="@id/Title"/>
+
+        <TextView
+            android:id="@+id/text_y_gyro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="text 2"
+            android:layout_below="@id/text_x_gyro"/>
+        <TextView
+            android:id="@+id/text_z_gyro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="Text 3"
+            android:layout_below="@id/text_y_gyro"/>
+
+        <TextView
+            android:id="@+id/Title_acclero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="Sensor Accelerometer"
+            android:layout_below="@id/text_z_gyro"/>
+
+        <TextView
+            android:id="@+id/text_x_acclero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="text 1"
+            android:textSize="15sp"
+            android:layout_below="@id/Title_acclero"/>
+
+        <TextView
+            android:id="@+id/text_y_acclero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:text="text 2"
+            android:layout_below="@id/text_x_acclero"/>
+
+        <TextView
+            android:id="@+id/text_z_acclero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="text 3"
+            android:layout_below="@id/text_y_acclero"/>
+
+        <TextView
+            android:id="@+id/text_aktivitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Aktivitas"
+            android:textSize="20sp"
+            android:layout_below="@id/text_z_acclero"/>
+
+        <TextView
+            android:id="@+id/text_kecepatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="@color/buttonBiru"
+            android:textSize="10sp"
+            android:layout_below="@id/text_aktivitas"/>
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:text="Start"
+            android:textSize="20dp"
+            android:layout_below="@id/text_kecepatan"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Stop"
+            android:textSize="20dp"
+            android:layout_below="@id/text_kecepatan"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</fragment>

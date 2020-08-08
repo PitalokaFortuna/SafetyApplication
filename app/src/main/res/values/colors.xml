@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#10A2C5</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="buttonHijau">#009B23</color>
+    <color name="buttonMerah">#DB0019</color>
+    <color name="buttonMerahTua">#AF0016</color>
+    <color name="buttonBiru">#006ECF</color>
+    <color name="colorAbuTua">#999999</color>
+    <color name="text">#FF5722</color>
+</resources>

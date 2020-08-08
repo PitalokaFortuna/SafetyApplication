@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30sp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:text="Halaman Registrasi"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/txt_nama"
+                android:hint="Nama Lengkap"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_no_telp"
+                android:hint="Nomor Telepon"
+                android:inputType="number"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_no_keluarga"
+                android:hint="Nomor Telepon Keluarga"
+                android:inputType="number"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:hint="Password"
+                android:background="@drawable/border"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_confirm_password"
+                android:hint="Konfirmasi Password"
+                android:background="@drawable/border"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrasi"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/buttonBiru" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:text="Login"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="bottom"
+                    android:textAlignment="center"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
